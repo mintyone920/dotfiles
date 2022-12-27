@@ -148,9 +148,31 @@ lspconfig.pylsp.setup({
         pylsp = {
             plugins = {
                 pycodestyle = {
-                    maxLineLenght = 100
+                    maxLineLenght = 120
                 }
             }
         }
     }
 })
+
+lspconfig.zls.setup({
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    default_config = {
+        cmd = { 'zls' },
+        filetypes = { 'zig', 'zir' },
+        root_dir = util.root_pattern('zls.json', '.git'),
+        single_file_support = true,
+    },
+    docs = {
+        description = [[
+https://github.com/zigtools/zls
+Zig LSP implementation + Zig Language Server
+        ]],
+        default_config = {
+            root_dir = [[util.root_pattern("zls.json", ".git")]],
+        },
+    },
+})
+
