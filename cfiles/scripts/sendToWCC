@@ -1,2 +1,0 @@
-#!/bin/bash
-sshpass -p wcclite scp $1 root@192.168.73.221
