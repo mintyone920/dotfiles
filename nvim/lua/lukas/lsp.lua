@@ -176,3 +176,9 @@ Zig LSP implementation + Zig Language Server
     },
 })
 
+lspconfig.texlab.setup({
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    require("lspconfig.server_configurations.texlab"),
+})

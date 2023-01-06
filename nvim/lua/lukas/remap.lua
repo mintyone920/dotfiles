@@ -23,3 +23,6 @@ keymap.nnoremap("<leader>q", "<cmd>q<cr>")
 keymap.nnoremap("<leader>p", "\"+p")
 keymap.vnoremap("<leader>y", "\"+y")
 
+keymap.nnoremap("<leader>m", function ()
+    os.execute("make > /dev/null 2>&1 &")
+end)
