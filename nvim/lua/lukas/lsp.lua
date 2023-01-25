@@ -182,3 +182,10 @@ lspconfig.texlab.setup({
     capabilities = capabilities,
     require("lspconfig.server_configurations.texlab"),
 })
+
+lspconfig.clangd.setup({
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    require("lspconfig.server_configurations.clangd"),
+})

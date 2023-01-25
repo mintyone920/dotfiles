@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+dd bs=4096 conv=nocreat,notrunc if=$1 of=/media/lukas/CRP\ DISABLD/firmware.bin > ~/out.txt

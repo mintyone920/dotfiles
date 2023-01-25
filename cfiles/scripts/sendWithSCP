@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 read -p "Enter destination: " ip
 read -p -s "Enter password: " pass
 sshpass -p ${pass} scp ${ip}
