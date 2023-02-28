@@ -92,38 +92,11 @@ local lua_root_files = {
     "selene.toml",
 }
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    cmd = {"lua-language-server"},
-    filetypes = {"lua"},
-    root_dir = function(fname)
-      local root = util.root_pattern(unpack(lua_root_files))(fname) or util.root_pattern 'lua/'(fname)
-      if root and root ~= vim.env.HOME then
-        return root
-      end
-      return util.find_git_ancestor(fname)
-    end,
-    single_file_support = true,
-    log_level = vim.lsp.protocol.MessageType.Warning,
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = {
-                    "vim",
-                    "signals",
-                    "get",
-                    "get_value",
-                    "publish",
-                    "sleep",
-                },
-            },
-            workspace = {
-                library = vim.api.nvim_get_runtime_file("", true)
-            }
-        }
-    },
+    require("lspconfig.server_configurations.lua_ls")
 })
 
 lspconfig.rust_analyzer.setup({

@@ -10,6 +10,7 @@ require('packer').startup(function(use)
     use "wbthomason/packer.nvim"
     use "nvim-lualine/lualine.nvim"
     use "arcticicestudio/nord-vim"
+    use "tanvirtin/monokai.nvim"
     use "xiyaowong/nvim-transparent"
     use "numToStr/Comment.nvim"
     use "nvim-treesitter/nvim-treesitter"
