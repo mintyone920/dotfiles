@@ -7,8 +7,6 @@ require("lukas.lsp")
 
 require("lualine").setup()
 
-require("transparent").setup({
-    enable = true,
-})
+require("transparent").setup()
 
 require("Comment").setup()
