@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
-riverctl map normal Mod4 T spawn foot
+riverctl map normal Mod4 T spawn "foot"
 
 # Mod4+Q to close the focused view
 riverctl map normal Mod4 Q close
 
 # Mod4+R to open run menu
-riverctl map normal Mod4 R spawn "tofi-run"
+riverctl map normal Mod4 R spawn "wofi --show=run"
 
 # Mod4+Shift+E to exit river
 riverctl map normal Mod4+Shift Q exit
@@ -140,8 +140,6 @@ riverctl set-repeat 50 300
 riverctl float-filter-add app-id float
 riverctl float-filter-add title "popup title with spaces"
 
-riverctl input 1133:16500 accel-profile none
-
 # Set app-ids and titles of views which should use client side decorations
 riverctl csd-filter-add app-id "gedit"
 
@@ -150,7 +148,10 @@ riverctl csd-filter-add app-id "gedit"
 riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6 &
 riverctl spawn "pipewire"
+sleep 3
 riverctl spawn "wireplumber"
+sleep 3
 riverctl spawn "pipewire-pulse"
 riverctl spawn "waybar -c .config/waybar/config -s .config/waybar/style.css"
 riverctl spawn "swaybg -i Pictures/wallhaven-l8zmor.jpg"
+riverctl input pointer-1133:16500-Logitech_G305 accel-profile none
