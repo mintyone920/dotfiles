@@ -27,8 +27,8 @@ local function on_attach(client, bufnr)
     -- Displays a function"s signature information
     nnoremap("<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<cr>")
     -- Selects a code action available at the current cursor position
-    nnoremap("<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
-    xnoremap("<F4>", "<cmd>lua vim.lsp.buf.range_code_action()<cr>")
+    nnoremap("<C-a>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
+    xnoremap("<C-a>", "<cmd>lua vim.lsp.buf.range_code_action()<cr>")
 
     -- Show diagnostics in a floating window
 

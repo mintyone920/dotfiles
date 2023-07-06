@@ -8,11 +8,16 @@ end
 
 require('packer').startup(function(use)
     use "wbthomason/packer.nvim"
+    use "nvim-lua/plenary.nvim"
+
     use "nvim-lualine/lualine.nvim"
     use "arcticicestudio/nord-vim"
     use "tanvirtin/monokai.nvim"
     use "xiyaowong/nvim-transparent"
+
     use "numToStr/Comment.nvim"
+    use "nvim-telescope/telescope.nvim"
+
     use "nvim-treesitter/nvim-treesitter"
     use { "nvim-treesitter/nvim-treesitter-textobjects", after = { "nvim-treesitter" } }
 
