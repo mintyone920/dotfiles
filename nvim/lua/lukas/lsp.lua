@@ -161,4 +161,5 @@ lspconfig.clangd.setup({
     flags = lsp_flags,
     capabilities = capabilities,
     require("lspconfig.server_configurations.clangd"),
+    cmd = { 'clangd-15' },
 })
