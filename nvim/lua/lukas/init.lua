@@ -5,7 +5,12 @@ require("lukas.treesitter")
 require("lukas.lsp")
 
 
-require("lualine").setup()
+require("lualine").setup({
+    options = {
+        icons_enabled = false,
+        section_separators = "",
+    }
+})
 
 require("transparent").setup()
 
