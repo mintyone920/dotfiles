@@ -8,8 +8,7 @@ local lsp_flags = {
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local function on_attach(client, bufnr)
-
-    local opts = {buffer = true}
+    local opts = { buffer = true }
     local function nnoremap(lhs, rhs)
         require("lukas.keymap").nnoremap(lhs, rhs, opts)
     end
@@ -22,6 +21,7 @@ local function on_attach(client, bufnr)
     nnoremap("gi", "<cmd>lua vim.lsp.buf.implementation()<cr>")
     nnoremap("go", "<cmd>lua vim.lsp.buf.type_definition()<cr>")
     nnoremap("gr", "<cmd>lua vim.lsp.buf.references()<cr>")
+    nnoremap("<leader>r", "<cmd>lua vim.lsp.buf.format()<cr>")
     nnoremap("gl", "<cmd>lua vim.diagnostic.open_float()<cr>")
 
     -- Displays a function"s signature information
@@ -102,7 +102,7 @@ lspconfig.lua_ls.setup({
 lspconfig.rust_analyzer.setup({
     on_attach = on_attach,
     flags = lsp_flags,
-    filetypes =  {"rust"},
+    filetypes = { "rust" },
     settings = {
         ["rust-analyzer"] = {
             checkOnSave = {
@@ -161,5 +161,7 @@ lspconfig.clangd.setup({
     flags = lsp_flags,
     capabilities = capabilities,
     require("lspconfig.server_configurations.clangd"),
-    cmd = { 'clangd-15' },
+    cmd = { "clangd",
+        "--query-driver=/home/luka/arm/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc" },
+
 })
