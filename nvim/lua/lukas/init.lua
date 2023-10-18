@@ -44,3 +44,6 @@ require("remember").setup {
     open_folds = true,
 }
 
+require("monokai").setup({
+    palette = require("monokai").pro
+})

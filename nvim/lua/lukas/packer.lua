@@ -14,6 +14,7 @@ require('packer').startup(function(use)
     use "arcticicestudio/nord-vim"
     use "tanvirtin/monokai.nvim"
     use "xiyaowong/nvim-transparent"
+    use "rebelot/kanagawa.nvim"
 
     use "numToStr/Comment.nvim"
     use "nvim-telescope/telescope.nvim"
