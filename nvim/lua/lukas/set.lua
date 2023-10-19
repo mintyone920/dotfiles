@@ -14,3 +14,5 @@ vim.opt.wrap = false
 vim.opt.undofile = true
 
 vim.g.mapleader = ' '
+
+vim.opt.foldmethod = "indent"
