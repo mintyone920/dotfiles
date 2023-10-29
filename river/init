@@ -86,6 +86,9 @@ all_tags=$(((1 << 32) - 1))
 riverctl map normal Mod4 0 set-focused-tags $all_tags
 riverctl map normal Mod4+Shift 0 set-view-tags $all_tags
 
+riverctl map normal Mod4 p spawn "~/.config/river/nextWallpaper"
+riverctl map normal Mod4 P spawn "~/.config/river/previousWallpaper"
+
 # Mod4+Space to toggle float
 riverctl map normal Mod4 Space toggle-float
 
@@ -152,6 +155,7 @@ sleep 3
 riverctl spawn "wireplumber"
 sleep 3
 riverctl spawn "pipewire-pulse"
+sleep 5
 riverctl spawn "waybar -c .config/waybar/config -s .config/waybar/style.css"
 riverctl spawn "swaybg -i Pictures/wallhaven-l8zmor.jpg"
 riverctl input pointer-1133:16500-Logitech_G305 accel-profile none

@@ -163,5 +163,4 @@ lspconfig.clangd.setup({
     require("lspconfig.server_configurations.clangd"),
     cmd = { "clangd",
         "--query-driver=/home/luka/arm/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc" },
-
 })
