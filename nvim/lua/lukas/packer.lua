@@ -32,6 +32,8 @@ require('packer').startup(function(use)
     use "hrsh7th/cmp-path"
     use "hrsh7th/cmp-nvim-lua"
 
+    use "github/copilot.vim"
+
     if is_bootstrap then
         require('packer').sync()
     end
