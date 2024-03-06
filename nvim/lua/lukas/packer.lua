@@ -15,10 +15,13 @@ require('packer').startup(function(use)
     use "tanvirtin/monokai.nvim"
     use "xiyaowong/nvim-transparent"
     use "rebelot/kanagawa.nvim"
+    use "sainnhe/everforest"
 
     use "numToStr/Comment.nvim"
     use "nvim-telescope/telescope.nvim"
     use "vladdoster/remember.nvim"
+
+    use 'sakhnik/nvim-gdb'
 
     use "nvim-treesitter/nvim-treesitter"
     use { "nvim-treesitter/nvim-treesitter-textobjects", after = { "nvim-treesitter" } }

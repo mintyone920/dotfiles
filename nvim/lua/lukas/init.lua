@@ -7,6 +7,7 @@ require("lukas.lsp")
 
 require("lualine").setup({
     options = {
+        theme = "everforest",
         icons_enabled = false,
         section_separators = "",
     }
