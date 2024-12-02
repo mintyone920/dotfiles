@@ -20,6 +20,12 @@ require('packer').startup(function(use)
     use "numToStr/Comment.nvim"
     use "nvim-telescope/telescope.nvim"
     use "vladdoster/remember.nvim"
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    }
+    use "sindrets/diffview.nvim"
 
     use 'sakhnik/nvim-gdb'
 

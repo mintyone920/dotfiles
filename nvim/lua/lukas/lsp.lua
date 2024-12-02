@@ -28,7 +28,6 @@ local function on_attach(client, bufnr)
     nnoremap("<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<cr>")
     -- Selects a code action available at the current cursor position
     nnoremap("<C-a>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
-    xnoremap("<C-a>", "<cmd>lua vim.lsp.buf.range_code_action()<cr>")
 
     -- Show diagnostics in a floating window
 
@@ -96,7 +95,7 @@ lspconfig.lua_ls.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    require("lspconfig.server_configurations.lua_ls")
+    require("lspconfig.configs.lua_ls")
 })
 
 lspconfig.rust_analyzer.setup({
@@ -116,7 +115,7 @@ lspconfig.pylsp.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    require("lspconfig.server_configurations.pylsp"),
+    require("lspconfig.configs.pylsp"),
     settings = {
         pylsp = {
             plugins = {
@@ -132,23 +131,36 @@ lspconfig.zls.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    require("lspconfig.server_configurations.zls")
+    require("lspconfig.configs.zls")
 })
 
 lspconfig.texlab.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    require("lspconfig.server_configurations.texlab"),
+    require("lspconfig.configs.texlab"),
 })
 
 lspconfig.clangd.setup({
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
-    require("lspconfig.server_configurations.clangd"),
+    require("lspconfig.configs.clangd"),
     cmd = { "clangd",
-        "--query-driver=/home/luka/arm/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
         "--offset-encoding=utf-16",
     },
+})
+
+lspconfig.html.setup({
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    require("lspconfig.configs.html"),
+})
+
+lspconfig.ts_ls.setup({
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    require("lspconfig.configs.ts_ls"),
 })

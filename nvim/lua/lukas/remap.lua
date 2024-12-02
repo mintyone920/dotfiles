@@ -44,4 +44,4 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('v', '<leader>fg', 'y<ESC>:Telescope live_grep default_text=<C-R>\"<CR>')
 
-vim.keymap.set('n', '<leader>h', "<cmd>ClangdSwitchSourceHeader<cr>")
+vim.keymap.set('n', '<leader>z', "<cmd>ClangdSwitchSourceHeader<cr>")
