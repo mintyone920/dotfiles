@@ -78,7 +78,9 @@ if cmp then
             { name = "nvim_lua" },
             { name = "nvim_lsp" },
             { name = "nvim_lua" },
-
+            { name = "buffer" },
+            { name = "path" },
+            { name = "luasnip" },
         }
     })
 end
