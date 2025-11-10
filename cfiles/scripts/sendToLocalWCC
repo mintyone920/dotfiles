@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-read -p "Enter wcclite: " ip
-sshpass -p wcclite scp $1 root@${ip}:/tmp/
