@@ -1,1 +1,6 @@
-require("lukas")
+require("options")
+require("keymaps")
+require("plugins")
+require("config")
+require("colorscheme")
+require("lsp")
