@@ -28,3 +28,5 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 vim.keymap.set("v", "<leader>ff", "y<ESC>:Telescope live_grep default_text=<C-R>\"<CR>")
 
 vim.keymap.set("n", "<leader>z", "<cmd>ClangdSwitchSourceHeader<cr>")
+
+vim.keymap.set("n", "<leader>t", "<cmd>TransparentToggle<cr>")
