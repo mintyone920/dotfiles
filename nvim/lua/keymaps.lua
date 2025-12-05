@@ -39,3 +39,5 @@ vim.keymap.set("v", "<leader>ff", "y<ESC>:Telescope live_grep default_text=<C-R>
 vim.keymap.set("n", "<leader>z", "<cmd>LspClangdSwitchSourceHeader<cr>")
 
 vim.keymap.set("n", "<leader>t", "<cmd>TransparentToggle<cr>")
+
+vim.keymap.set("n", "<leader>s", "<cmd>!./sync<cr>")

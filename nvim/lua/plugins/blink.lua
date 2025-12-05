@@ -22,13 +22,19 @@ return {
 
         fuzzy = { implementation = "prefer_rust_with_warning" },
         completion = {
-            keyword = { range = "prefix" },
+            keyword = { range = "full" },
             menu = {
                 draw = {
                     treesitter = { "lsp" },
                 },
             },
             trigger = { show_on_trigger_character = true },
+            list = {
+                selection = {
+                    preselect = false,
+                    auto_insert = false,
+                },
+            },
             documentation = {
                 auto_show = true,
             },

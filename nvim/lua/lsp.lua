@@ -26,4 +26,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.lsp.enable({ "lua-language-server" })
 vim.lsp.enable({ "clangd" })
-vim.lsp.enable({ "pylyzer" })
+vim.lsp.enable({ "basedpyright" })
