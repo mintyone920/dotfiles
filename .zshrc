@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 export EDITOR="nvim"
+export ZELLIJ_AUTO_EXIT=true
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -115,8 +116,11 @@ export EDITOR="nvim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias nvim="/home/lukas-taroza/nvim-linux-x86_64/bin/nvim"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init - zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
