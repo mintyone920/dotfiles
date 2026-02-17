@@ -34,9 +34,10 @@ local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files)
 vim.keymap.set("n", "<leader>fg", builtin.live_grep)
 vim.keymap.set("n", "<leader>fh", builtin.help_tags)
-vim.keymap.set("v", "<leader>ff", "y<ESC>:Telescope live_grep default_text=<C-R>\"<CR>")
+vim.keymap.set("v", "<leader>fg", "y<ESC>:Telescope live_grep default_text=<C-R>\"<CR>")
 
 vim.keymap.set("n", "<leader>z", "<cmd>LspClangdSwitchSourceHeader<cr>")
+vim.keymap.set("n", "<C-a>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
 
 vim.keymap.set("n", "<leader>t", "<cmd>TransparentToggle<cr>")
 

@@ -18,4 +18,4 @@ vim.opt.undofile = true
 
 vim.g.mapleader = " "
 
-vim.opt.foldmethod = "marker"
+vim.opt.foldmethod = "manual"
