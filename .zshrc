@@ -16,6 +16,7 @@ ZSH_THEME="pmcgee"
 plugins=(z tmux zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source ~/dotfiles/changecwd.sh
 
 export LANG=en_US.UTF-8
 
