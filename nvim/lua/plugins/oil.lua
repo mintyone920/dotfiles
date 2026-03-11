@@ -8,6 +8,9 @@ return {
                 "size",
                 "mtime",
             },
+            keymaps = {
+                ["<Esc>"] = { "actions.close" },
+            },
         })
     end,
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },

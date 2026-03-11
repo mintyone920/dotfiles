@@ -1,7 +1,8 @@
 return {
-    "nvim-telescope/telescope.nvim",
-    tag = "v0.1.9",
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function ()
+        require("harpoon").setup()
     end
 }
