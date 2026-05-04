@@ -1,0 +1,310 @@
+[apps/update-manager]
+first-run=false
+launch-count=22
+launch-time=int64 1777875326
+show-details=true
+window-height=689
+window-width=593
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1777875742
+
+[org/gnome/TextEditor]
+spellcheck=false
+
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='programming'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-maximized=false
+window-size=(680, 858)
+word-size=64
+
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(1599, 907, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/applications/terminal]
+exec='kitty'
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/lukas-taroza/.config/background'
+picture-uri-dark='file:///home/lukas-taroza/.config/background'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us'), ('xkb', 'lt')]
+sources=[('xkb', 'us'), ('xkb', 'lt')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+color-scheme='prefer-dark'
+cursor-theme='Yaru'
+enable-hot-corners=false
+gtk-theme='Yaru-sage-dark'
+icon-theme='Yaru-sage'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['firefox-firefox', 'gnome-power-panel', 'discord', 'org-gnome-nautilus', 'discord-discord', 'snapd-desktop-integration-snapd-desktop-integration', 'logicanalyzer', 'libreoffice-calc', 'eset-eea', 'org-gnome-settings', 'org-remmina-remmina', 'org-gnome-calculator']
+show-banners=true
+
+[org/gnome/desktop/notifications/application/discord-discord]
+application-id='discord_discord.desktop'
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/eset-eea]
+application-id='eset.eea.desktop'
+
+[org/gnome/desktop/notifications/application/firefox-firefox]
+application-id='firefox_firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-calc]
+application-id='libreoffice-calc.desktop'
+
+[org/gnome/desktop/notifications/application/logicanalyzer]
+application-id='LogicAnalyzer.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-calculator]
+application-id='org.gnome.Calculator.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-remmina-remmina]
+application-id='org.remmina.Remmina.desktop'
+
+[org/gnome/desktop/notifications/application/snapd-desktop-integration-snapd-desktop-integration]
+application-id='snapd-desktop-integration_snapd-desktop-integration.desktop'
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+speed=0.0
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/wm/keybindings]
+begin-resize=['<Super>r']
+close=['<Super>q']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='click'
+num-workspaces=5
+resize-with-right-button=true
+
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=216
+sizing-mode='automatic'
+window-ratio=(1.9620359482613809, 0.91103456467513955)
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/mutter]
+dynamic-workspaces=false
+edge-tiling=false
+workspaces-only-on-primary=true
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1750, 896)
+
+[org/gnome/nm-applet/eap/106a99d5-7c80-4d9c-b0f1-74ecd78cc783]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/80ab1970-e833-372e-8635-f330b7d9f1f0]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c8b99821-8dc7-41bf-bf16-9e986bb08ee8]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ecc2132d-3a07-4462-a53e-c15626257ccd]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ee165558-b4c2-48d6-822a-3bad285da60f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/kitty]
+last-folder-path='/home/lukas-taroza/Documents/bitbucket'
+
+[org/gnome/portal/filechooser/snap.discord]
+last-folder-path='/home/lukas-taroza/Documents/bitbucket/openwrt-22-packages/elseta-ebus/files/etc'
+
+[org/gnome/portal/filechooser/snap.firefox]
+last-folder-path='/home/lukas-taroza/Documents'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+calculator=['<Super>c']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+terminal=['<Super>t']
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>f'
+command='nautilus'
+name='open File manager'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=900
+sleep-inactive-ac-type='suspend'
+
+[org/gnome/shell]
+enabled-extensions=['ding@rastersoft.com', 'ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com']
+favorite-apps=['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'discord_discord.desktop']
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='46.0'
+
+[org/gnome/shell/extensions/dash-to-dock]
+app-hotkey-1=@as []
+app-hotkey-2=@as []
+app-hotkey-3=@as []
+app-hotkey-4=@as []
+app-hotkey-5=@as []
+app-hotkey-6=@as []
+app-hotkey-7=@as []
+app-hotkey-8=@as []
+app-hotkey-9=@as []
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+preferred-monitor=-2
+preferred-monitor-by-connector='HDMI-2'
+shortcut=@as []
+shortcut-text='[]'
+show-trash=false
+
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+show-home=false
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(211,70,21)'
+last-version-installed=46
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
+tiling-popup-all-workspace=true
+
+[org/gnome/shell/keybindings]
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+switch-to-application-5=@as []
+switch-to-application-6=@as []
+switch-to-application-7=@as []
+switch-to-application-8=@as []
+switch-to-application-9=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(1451, 630)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=160
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(2265, 54)
+window-size=(1231, 958)
+
+[system/locale]
+region='en_CA.UTF-8'
