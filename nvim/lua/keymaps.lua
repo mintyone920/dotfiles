@@ -30,6 +30,7 @@ vim.keymap.set("n", "<leader>z", "<cmd>LspClangdSwitchSourceHeader<cr>")
 vim.keymap.set("n", "<C-a>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
 
 vim.keymap.set("n", "<leader>t", "<cmd>TransparentToggle<cr>")
+vim.keymap.set('t', '<esc><esc>', '<C-\\><C-n>')
 
 local harpoon = require("harpoon")
 

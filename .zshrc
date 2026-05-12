@@ -15,6 +15,8 @@ ZSH_THEME="pmcgee"
 
 plugins=(z zsh-autosuggestions)
 
+alias vim=nvim
+
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/changecwd.sh
 
