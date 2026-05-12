@@ -11,6 +11,9 @@ return {
             keymaps = {
                 ["<Esc>"] = { "actions.close" },
             },
+            view_options = {
+                show_hidden = true,
+            },
         })
     end,
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },

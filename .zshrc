@@ -31,4 +31,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
-eval "$(zellij setup --generate-auto-start zsh)"
+if [[ -z "$ZELLIJ" ]] && [[ -z "$SSH_CONNECTION" ]]; then
+    zellij attach --create
+fi
